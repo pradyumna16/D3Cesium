@@ -4,26 +4,23 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Cesium + D3 Traffic Data Visualization</title>
 	<script type="text/javascript" src="3rdParty/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="3rdParty/jquery-ui-1.10.3/ui/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="3rdParty/jquery-ui-1.10.3/ui/jquery.tipsy.js"></script>
 	<script type="text/javascript" src="3rdParty/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
-    <script type="text/javascript" src="3rdParty/Cesium/Build/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="3rdParty/cesium1/Cesium/Cesium.js"></script>
     <script type="text/javascript" src="3rdParty/d3/d3.v3.js"></script>
-    <link rel="stylesheet" href="http://onehackoranother.com/projects/jquery/tipsy/stylesheets/tipsy.css" type="text/css" title="no title" charset="utf-8"/>
+    <link rel="stylesheet" href="3rdParty/tipsy.css" type="text/css" title="no title" charset="utf-8"/>
 	<script type="text/javascript">
 		var sharedObject = {
 			dispatch : d3.dispatch("nationMouseover"),
-      dispatchf: d3.dispatch("filterMouseover"),
 			yearData : [],
-			filter   : [],
-      date     : "2012-01-02",
-      showBy   : "Type",
+			dateData : [],
 			flyTo : null
 		};
     </script>
     <style>
       @import url(3rdParty/jquery-ui-1.10.3/themes/vader/jquery-ui.css);
       @import url(d3chart.css);
-      @import url(3rdParty/Cesium/Build/Cesium/Widgets/widgets.css);
+      @import url(3rdParty/cesium1/Cesium/Widgets/widgets.css);
       body {
         padding: 0;
         margin: 0;
